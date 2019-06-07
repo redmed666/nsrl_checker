@@ -59,7 +59,6 @@ func main() {
 		nmbThreads = *nmbThreadsArg
 	}
 
-	return
 	guard := make(chan struct{}, nmbThreads)
 	for _, file := range exeDirInfo {
 		exePath := *exeDir + "/" + file.Name()
