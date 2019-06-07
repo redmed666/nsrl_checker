@@ -10,4 +10,3 @@ GOOS=darwin GOARCH=amd64 make build
 ```
 
 This command will output `nsrl_checker` in bin/darwin/amd64.# nsrl_checker
-# nsrl_checker
