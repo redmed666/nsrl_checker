@@ -63,6 +63,6 @@ func main() {
 	for _, file := range exeDirInfo {
 		exePath := *exeDir + "/" + file.Name()
 		guard <- struct{}{}
-		util.SortExe(exePath, &contentNsrl, *hashAlgo, dirs, guard)
+		go util.SortExe(exePath, &contentNsrl, *hashAlgo, dirs, guard)
 	}
 }
